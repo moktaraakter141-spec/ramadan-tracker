@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 15% 18%;
+
+    --card: 40 30% 98%;
+    --card-foreground: 220 15% 18%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 220 15% 18%;
+
+    --primary: 152 35% 38%;
+    --primary-foreground: 40 33% 96%;
+
+    --secondary: 40 20% 90%;
+    --secondary-foreground: 220 15% 18%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 152 25% 88%;
+    --accent-foreground: 152 35% 28%;
+
+    --destructive: 0 65% 52%;
+    --destructive-foreground: 40 33% 96%;
+
+    --border: 40 18% 87%;
+    --input: 40 18% 87%;
+    --ring: 152 35% 38%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 40 30% 95%;
+    --sidebar-foreground: 220 15% 18%;
+    --sidebar-primary: 152 35% 38%;
+    --sidebar-primary-foreground: 40 33% 96%;
+    --sidebar-accent: 152 25% 88%;
+    --sidebar-accent-foreground: 152 35% 28%;
+    --sidebar-border: 40 18% 87%;
+    --sidebar-ring: 152 35% 38%;
+  }
+
+  .dark {
+    --background: 220 15% 10%;
+    --foreground: 40 20% 92%;
+
+    --card: 220 15% 13%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 220 15% 13%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 152 35% 45%;
+    --primary-foreground: 220 15% 10%;
+
+    --secondary: 220 12% 18%;
+    --secondary-foreground: 40 20% 92%;
+
+    --muted: 220 12% 18%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 152 20% 20%;
+    --accent-foreground: 152 35% 70%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 40 20% 92%;
+
+    --border: 220 12% 20%;
+    --input: 220 12% 20%;
+    --ring: 152 35% 45%;
+
+    --sidebar-background: 220 15% 10%;
+    --sidebar-foreground: 40 20% 92%;
+    --sidebar-primary: 152 35% 45%;
+    --sidebar-primary-foreground: 220 15% 10%;
+    --sidebar-accent: 152 20% 20%;
+    --sidebar-accent-foreground: 152 35% 70%;
+    --sidebar-border: 220 12% 20%;
+    --sidebar-ring: 152 35% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Serif Bengali', serif;
+  }
+}
